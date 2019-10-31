@@ -17,7 +17,7 @@ public class LoginSendEmailTest {
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", getClass().getClassLoader().getResource("chromedriver.exe").getPath());
         driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get("https://mail.ru/");
         loginPage = PageFactory.initElements(driver, LoginPage.class);
